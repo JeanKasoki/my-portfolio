@@ -2,7 +2,11 @@
   display: flex; //alinhamento e distribuição dos elementos
   flex-direction: column; //define a direção dos itens
   grid-area: header;
+  justify-content: center;
   gap: 24px;
+
+  align-items: center;
+  //width: 100%;
 
   img{
     border-radius: 24px;
