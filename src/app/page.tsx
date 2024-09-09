@@ -1,31 +1,26 @@
-import { Experience } from "./components/header/experience/experience";
+import { Experience } from "./components/experience/experience";
 import { Header } from "./components/header/header";
+import { Info } from "./components/information/information";
+import { EmailIcon } from "./components/icons/email-icon";
+import { SocialBtns } from "./components/social-btns/social-btns";
 
-import "./components/header/styles/home.scss"
+import "./components/styles/home.scss"
 
 export default function Home() {
   return (
       <main className="container">
         <Header/>
         <Experience/>
-          <div className="infos">
-            <h3>Languages</h3>
-          <div className="languages-info">
-            <span>🇺🇸 EN - Advanced</span>
-            <span>🇧🇷 PT-BR - Native</span>
-          </div>
+        <Info/>
 
-          <h3>Educação</h3>
-          <div className="educational-info">
-            <span>Bacharel em Sistemas de Informação - Universidade Federal Rural de Amazônia (UFRA)</span>
-          </div>
+          <div className="buttons">
+            <SocialBtns/>
+            
+          <a className="btn-primary" href="mailto:jeanmyjean@outlook.com">
+            Contate-me! 
+            <EmailIcon/>
+            </a>
         </div>
-
-          <div className="buttons"></div>
-          <div className="social"></div>
-
-          <button>Contate-me!</button>
-
     </main>
   );
 }
