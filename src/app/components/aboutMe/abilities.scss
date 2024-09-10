@@ -1,0 +1,32 @@
+.abilities {
+  display: flex;
+  flex-direction: row; /* Padrão: ícones empilhados em telas pequenas */
+  flex-wrap: wrap; /* Permite que os ícones se movam para a linha seguinte se necessário */
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  gap: 24px;
+
+
+  a {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    /* Aplica o espaçamento extra apenas para telas menores que 600px */
+    @media (max-width: 600px) {
+      margin-top: 50px; /* Empurra os ícones para baixo em telas pequenas */
+      justify-content: center;
+    }
+
+  /* Media query para telas maiores */
+  @media (min-width: 600px) {
+    flex-direction: row; /* Muda para linha em telas maiores */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+  }
+}

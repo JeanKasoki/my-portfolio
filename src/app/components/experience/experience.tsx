@@ -5,8 +5,8 @@ import "./experience.scss"
 export function Experience(){
   return (
     <div className="experience">
-      <SectionTitle text="Experience"/>
-      <p>3 anos de experiência em...</p>
+      <SectionTitle text="Sobre mim"/>
+      <p>Desenvolvedor Front-end e Back-end. Apaixonado por criar soluções tecnológicas inovadoras e eficientes. Sempre em busca de novos desafios para aprimorar minhas habilidades e entregar resultados de alta qualidade.</p>
       <div className="experience-time">
 
       </div>
